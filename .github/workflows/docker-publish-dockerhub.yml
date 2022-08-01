@@ -72,8 +72,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            donlinglok/shenyu/admin:latest1
-            donlinglok/shenyu/admin:${{ env.TAG }}
+            donlinglok/shenyuadmin:latest1
+            donlinglok/shenyuadmin:${{ env.TAG }}
 
       - name: Build and push (bootstrap) (dockerhub)
         uses: docker/build-push-action@v3
@@ -83,5 +83,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            donlinglok/shenyu/bootstrap:latest1
-            donlinglok/shenyu/bootstrap:${{ env.TAG }}
+            donlinglok/shenyubootstrap:latest1
+            donlinglok/shenyubootstrap:${{ env.TAG }}
