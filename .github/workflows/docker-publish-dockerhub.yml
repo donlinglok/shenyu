@@ -15,11 +15,7 @@
 
 name: docker-publish-dockerhub
 
-on:
-  release:
-    # pre-release or draft status don't trigger this job.
-    # this job called if and only if pre-release -> release or release directly.
-    types: ["released"]
+on: workflow_dispatch
 
 env:
   REPOSITORY: ${{ github.repository }}
