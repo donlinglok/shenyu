@@ -76,7 +76,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ${{ env.REPOSITORY }}/admin:latest
+            ${{ env.REPOSITORY }}/admin:latest1
             ${{ env.REPOSITORY }}/admin:${{ env.TAG }}
 
       - name: Build and push (bootstrap) (dockerhub)
@@ -87,5 +87,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ${{ env.REPOSITORY }}/bootstrap:latest
+            ${{ env.REPOSITORY }}/bootstrap:latest1
             ${{ env.REPOSITORY }}/bootstrap:${{ env.TAG }}
